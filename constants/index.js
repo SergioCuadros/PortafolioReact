@@ -10,7 +10,7 @@ export const ABOUT_TEXT = `Adem√°s, valoro el trabajo en equipo y la colaboraci√
 export const EXPERIENCES = [
   {
     year: "2023 - Present",
-    role: "Senior Full Stack Developer",
+    role: "Senior Full Stack DevfdSeloper",
     company: "Google Inc.",
     description: `Led a team in developing and maintaining web applications using JavaScript, React.js, and Node.js. Implemented RESTful APIs and integrated with MongoDB databases. Collaborated with stakeholders to define project requirements and timelines.`,
     technologies: ["Javascript", "React.js", "Next.js", "mongoDB"],
