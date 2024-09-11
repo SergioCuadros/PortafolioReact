@@ -5,7 +5,7 @@ import project4 from "../assets/projects/project-4.webp";
 
 export const HERO_CONTENT = `Mi enfoque se centra en crear experiencias de usuario excepcionales y garantizar la usabilidad y accesibilidad de mis proyectos. Me apasiona seguir aprendiendo y manteniéndome actualizado sobre las últimas tecnologías y tendencias en el desarrollo web para ofrecer soluciones innovadoras y de calidad.`;
 
-export const ABOUT_TEXT = `Además, vaddloro el trabajo en equipo y la colaboración, ya que creo que el intercambio de ideas y la retroalimentación son fundamentales para lograr resultados exitosos.`;
+export const ABOUT_TEXT = `Además, valoro el trabajo en equipo y la colaboración, ya que creo que el intercambio de ideas y la retroalimentación son fundamentales para lograr resultados exitosos.`;
 
 export const EXPERIENCES = [
   {
