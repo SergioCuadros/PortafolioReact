@@ -35,7 +35,7 @@ const Hero = () => {
               Descargar CV
             </a> */}
 
-            <a href="/resume.pdf" target="_blank" download className="group relative w-32 h-12 text-neutral-50 bg-neutral-800 p-2 overflow-hidden ">
+            {/* <a href="/resume.pdf" target="_blank" download className="group relative w-32 h-12 text-neutral-50 bg-neutral-800 p-2 overflow-hidden ">
               <p className="absolute  font-bold z-10  duration-500"> Descargar CV</p>
               <div className="">
                 <div className="absolute duration-500 bg-neutral-600 w-4 h-16  bottom-12 group-hover:-bottom-1 delay-500 right-0"></div>
@@ -46,7 +46,17 @@ const Hero = () => {
                 <div className="absolute duration-500 bg-neutral-600 w-4 h-16  -bottom-16 group-hover:-bottom-1 right-20"></div>
                 <div className="absolute duration-500 bg-neutral-600 w-4 h-16  bottom-12 group-hover:-bottom-1 delay-500 right-26"></div>
               </div>
-            </a>
+            </a> */}
+
+<a
+  href="/resume.pdf"
+  target="_blank"
+  download
+  className="cursor-pointer uppercase bg-neutral-800 px-4 py-2 active:translate-x-0.5 active:translate-y-0.5 hover:shadow-[0.5rem_0.5rem_#4B4B4B,-0.5rem_-0.5rem_#3E2723] transition"
+>
+  Descargar CV
+</a>
+
           </div>
         </div>
       </div>

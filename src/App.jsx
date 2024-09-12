@@ -1,7 +1,9 @@
 import Navbar from "./components/Navbar"
 import Hero from "./components/Hero"
 import Tecnos from "./components/Tecnos"
-import { Projects } from "./components/Projects"
+import {Projects}  from "./components/Projects"
+import Expirience from "./components/Expirience"
+import { Contact } from "./components/Contact"
 const App = () => {
   return (
     <div className="overflow-x-hidden text-stone-300 antialiased">
@@ -14,6 +16,8 @@ const App = () => {
         <Hero/>
         <Tecnos/>
         <Projects/>
+        <Expirience/>
+        <Contact/>
       </div>
     </div>
   )
