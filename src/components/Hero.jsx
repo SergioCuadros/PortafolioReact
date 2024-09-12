@@ -25,7 +25,7 @@ const Hero = () => {
             <p className="my-2 max-w-lg py-6 text-xl leading-relaxed tracking-tighter">
               {HERO_CONTENT}
             </p>
-            <a
+            {/* <a
               href="/resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
@@ -33,7 +33,7 @@ const Hero = () => {
               className="bg-white rounded-full p-4 text-sm text-stone-800 mb-10 hover:bg-stone-800 hover:text-white transition-colors duration-300 ease-in-out"
             >
               Descargar CV
-            </a>
+            </a> */}
 
             <a href="/resume.pdf" target="_blank" download className="group relative w-32 h-12 text-neutral-50 bg-neutral-800 p-2 overflow-hidden ">
               <p className="absolute  font-bold z-10  duration-500"> Descargar CV</p>
