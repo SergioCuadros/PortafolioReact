@@ -9,34 +9,47 @@ export const ABOUT_TEXT = `Además, valoro el trabajo en equipo y la colaboraci�
 
 export const EXPERIENCES = [
   {
-    year: "2023 - Present",
-    role: "Senior Full Stack Developer",
-    company: "Google Inc.",
-    description: `Led a team in developing and maintaining web applications using JavaScript, React.js, and Node.js. Implemented RESTful APIs and integrated with MongoDB databases. Collaborated with stakeholders to define project requirements and timelines.`,
-    technologies: ["Javascript", "React.js", "Next.js", "mongoDB"],
+    year: "Septiembre 2023 – Actual",
+    role: "Desarrollador Frontend",
+    company: "La Bolita",
+    description: `
+    Responsable del diseño y optimización de interfaces UI/UX, mejorando la experiencia del usuario y el rendimiento frontend.
+Consumo e integración de APIs usando jQuery, Axios y Fetch API en JavaScript.
+Desarrollo de interfaces responsivas con Bootstrap y HTML bajo arquitectura MVC.
+Participación en ceremonias Scrum, alineando objetivos de sprint.
+Uso de Tailwind CSS para landing pages, optimizando velocidad de desarrollo y consistencia de diseño.
+Prototipado de mockups en Adobe XD y Figma, garantizando coherencia en UI/UX.
+
+    `,
+    technologies: ["HTML", "CSS", "Bootstrap", "Tailwind", "JavaScript", ".NET", "Adobe XD", "Figma"],
   },
   {
-    year: "2022 - 2023",
-    role: "Frontend Developer",
-    company: "Adobe",
-    description: `Designed and developed user interfaces for web applications using Next.js and React. Worked closely with backend developers to integrate frontend components with Node.js APIs. Implemented responsive designs and optimized frontend performance.`,
-    technologies: ["HTML", "CSS", "Vue.js", "mySQL"],
+    year: "Enero – junio 2023",
+    role: "Desarrollador Frontend",
+    company: "Kaab Code",
+    description: `
+      Crear la interfaz del sistema de la empresa, así como el de las vistas generadas.
+      Programar la funcionabilidad de las vistas.
+      Actualizar los cambios en Git.
+      Trabajar bajo la metodología Kanban.
+    `,
+    technologies: ["Vue.js", "JavaScript", "HTML", "CSS", "Kanban", "Trello"],
   },
   {
-    year: "2021 - 2022",
-    role: "Full Stack Developer",
-    company: "Facebook",
-    description: `Developed and maintained web applications using JavaScript, React.js, and Node.js. Designed and implemented RESTful APIs for data communication. Collaborated with cross-functional teams to deliver high-quality software products on schedule.`,
-    technologies: ["Python", "Svelte", "Three.js", "Postgres"],
-  },
-  {
-    year: "2020 - 2021",
-    role: "Software Engineer",
-    company: "Paypal",
-    description: `Contributed to the development of web applications using JavaScript, React.js, and Node.js. Managed databases and implemented data storage solutions using MongoDB. Worked closely with product managers to prioritize features and enhancements.`,
-    technologies: ["Ruby", "Rails", "PHP", "Sqlite"],
-  },
+    year: "Enero – junio 2022",
+    role: "Servicio Social",
+    company: "Plenumsoft",
+    description: `
+      Contribuir en la creación de un CRUD para el alta de datos personales de los empleados y clientes.
+      Crear la interfaz usando Bootstrap y HTML.
+      Verificar el correcto desarrollo del MVC.
+      Participar en reuniones bajo la metodología Scrum.
+    `,
+    technologies: ["C#", ".NET", "MySQL", "Bootstrap", "HTML"],
+  }
+  
 ];
+
 
 export const PROJECTS = [
   {
