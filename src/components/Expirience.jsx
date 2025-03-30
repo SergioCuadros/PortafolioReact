@@ -37,6 +37,7 @@ const Expirience = () => {
                 {experience.role} -{" "}
                 <span className="text-sm text-stone-500">
                   {experience.company}
+                  {experience.link}
                 </span>
               </h3>
               <p className="mb-4 text-stone-400">{experience.description}</p>

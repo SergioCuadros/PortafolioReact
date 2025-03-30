@@ -11,7 +11,7 @@ const Navbar = () => {
       </div>
       <div className="m-8 flex items-center justify-center gap-4 text-2xl">
         <a
-          href="#"
+          href="https://www.linkedin.com/in/sergio-cuadros-benitez-5199581bb/"
           target="_blank"
           rel="noopener  noreferrer"
           aria-label="LinkeInd"
@@ -19,18 +19,10 @@ const Navbar = () => {
           <FaLinkedinIn />
         </a>
         <a
-          href="#"
+          href="https://github.com/SergioCuadros"
           target="_blank"
           rel="noopener  noreferrer"
-          aria-label="LinkeInd"
-        >
-          <FaInstagram />
-        </a>
-        <a
-          href="#"
-          target="_blank"
-          rel="noopener  noreferrer"
-          aria-label="LinkeInd"
+          aria-label="GitHub"
         >
           <FaGithub />
         </a>

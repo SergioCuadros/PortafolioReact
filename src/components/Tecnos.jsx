@@ -68,14 +68,14 @@ const Tecnos = () => {
         >
           <RiJavascriptFill className="text-7xl text-white-400" />
         </motion.div>
-        <motion.div
+        {/* <motion.div
           initial="initial"
           animate="animate"
           variants={iconVariants(4)}
           className="p-4"
         >
           <RiReactjsFill className="text-7xl text-white-400" />
-        </motion.div>
+        </motion.div> */}
         <motion.div
           initial="initial"
           animate="animate"
@@ -117,6 +117,8 @@ const Tecnos = () => {
           <DiIllustrator className="text-7xl text-white-400" />
         </motion.div>
       </motion.div>
+
+      
     </div>
   );
 };

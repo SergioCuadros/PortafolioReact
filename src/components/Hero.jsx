@@ -65,7 +65,7 @@ const Hero = () => {
 
             <motion.a
               variants={childVariants}
-              href="/resume.pdf"
+              href="/CV_Sergio_Cuadros.pdf"
               target="_blank"
               download
               className="cursor-pointer uppercase bg-neutral-800 px-4 py-2 active:translate-x-0.5 active:translate-y-0.5 hover:shadow-[0.5rem_0.5rem_#4B4B4B,-0.5rem_-0.5rem_#3E2723] transition"
