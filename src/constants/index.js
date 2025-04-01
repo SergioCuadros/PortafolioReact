@@ -11,17 +11,27 @@ export const EXPERIENCES = [
   {
     year: "Septiembre 2023 – Actual",
     role: "Desarrollador Frontend",
-    company: "La Bolita",
+    company: "Xazar",
     description: `
     Responsable del diseño y optimización de interfaces UI/UX, mejorando la experiencia del usuario y el rendimiento frontend.
-Consumo e integración de APIs usando jQuery, Axios y Fetch API en JavaScript.
-Desarrollo de interfaces responsivas con Bootstrap y HTML bajo arquitectura MVC.
-Participación en ceremonias Scrum, alineando objetivos de sprint.
-Uso de Tailwind CSS para landing pages, optimizando velocidad de desarrollo y consistencia de diseño.
-Prototipado de mockups en Adobe XD y Figma, garantizando coherencia en UI/UX.
+    Consumo e integración de APIs usando jQuery, Axios y Fetch API en JavaScript.
+    Desarrollo de interfaces responsivas con Bootstrap y HTML bajo arquitectura MVC.
+    Participación en ceremonias Scrum, alineando objetivos de sprint.
+    Uso de Tailwind CSS para landing pages, optimizando velocidad de desarrollo y consistencia de diseño.
+    Prototipado de mockups en Adobe XD y Figma, garantizando coherencia en UI/UX.
 
     `,
-    technologies: ["HTML", "CSS", "Bootstrap", "Tailwind", "JavaScript", ".NET", "Adobe XD", "Figma"],
+    technologies: [
+      "HTML",
+      "CSS",
+      "Bootstrap",
+      "Tailwind",
+      "JavaScript",
+      "TypeScript",
+      ".NET",
+      "AdobeXD",
+      "Figma",
+    ],
   },
   {
     year: "Enero – junio 2023",
@@ -46,10 +56,8 @@ Prototipado de mockups en Adobe XD y Figma, garantizando coherencia en UI/UX.
       Participar en reuniones bajo la metodología Scrum.
     `,
     technologies: ["C#", ".NET", "MySQL", "Bootstrap", "HTML"],
-  }
-  
+  },
 ];
-
 
 export const PROJECTS = [
   {

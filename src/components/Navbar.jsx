@@ -9,28 +9,22 @@ const Navbar = () => {
           <img src={logo} alt="logo" className="mx-2" width={100} height={33} />
         </a>
       </div>
-      <div className="m-8 flex items-center justify-center gap-4 text-2xl">
+      <div className="m-8 flex items-center justify-center gap-4 text-2xl ">
         <a
-          href="#"
+          href="https://www.linkedin.com/in/sergio-cuadros-benitez-5199581bb/"
           target="_blank"
           rel="noopener  noreferrer"
           aria-label="LinkeInd"
+           className="text-white hover:text-yellow-950 transition-colors duration-300"
         >
           <FaLinkedinIn />
         </a>
         <a
-          href="#"
+          href="https://github.com/SergioCuadros"
           target="_blank"
           rel="noopener  noreferrer"
           aria-label="LinkeInd"
-        >
-          <FaInstagram />
-        </a>
-        <a
-          href="#"
-          target="_blank"
-          rel="noopener  noreferrer"
-          aria-label="LinkeInd"
+          className="text-white hover:text-yellow-950 transition-colors duration-300"
         >
           <FaGithub />
         </a>

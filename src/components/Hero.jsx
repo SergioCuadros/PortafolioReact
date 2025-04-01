@@ -19,7 +19,7 @@ const childVariants = {
   hidden: { opacity: 0, x: -100 },
   visible: { opacity: 1, x: 0, transition: { duration: 0.5, delay: 0.5 } },
 };
-const Hero = () => {
+export const Hero = () => {
   return (
     <div className="pb-4 lg:mb-36">
       <div className="flex flex-wrap lg:flex-row-reverse">
@@ -68,7 +68,7 @@ const Hero = () => {
               href="/resume.pdf"
               target="_blank"
               download
-              className="cursor-pointer uppercase bg-neutral-800 px-4 py-2 active:translate-x-0.5 active:translate-y-0.5 hover:shadow-[0.5rem_0.5rem_#4B4B4B,-0.5rem_-0.5rem_#3E2723] transition"
+              className="cursor-pointer uppercase bg-neutral-800 px-4 py-2 active:translate-x-0.5 active:translate-y-0.5 hover:shadow-[0.5rem_0.5rem_#4B4B4B,-0.5rem_-0.5rem_#3E2723] transition rounded-s-3xl"
             >
               Descargar CV
             </motion.a>
@@ -79,4 +79,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+

@@ -42,7 +42,7 @@ const Expirience = () => {
               <p className="mb-4 text-stone-400">{experience.description}</p>
               {experience.technologies.map((tech, index) => (
                 <span
-                  className="mr-2 mt-4 rounded bg-stone-900 px-2 py-1 text-sm font-medium text-slate-300"
+                  className="mr-3 mt-6 rounded bg-stone-900 px-2 py-1 text-sm font-medium text-slate-300"
                   key={index}
                 >
                   {tech}
@@ -57,3 +57,4 @@ const Expirience = () => {
 };
 
 export default Expirience;
+
