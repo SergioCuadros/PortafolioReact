@@ -10,6 +10,9 @@ export const HERO_CONTENT = `Mi enfoque se centra en crear experiencias de usuar
 
 export const ABOUT_TEXT = `Además, valoro el trabajo en equipo y la colaboración, ya que creo que el intercambio de ideas y la retroalimentación son fundamentales para lograr resultados exitosos.`;
 
+export const ABOUT_TEXT_2 = `Desde que empecé en el mundo de desarrollo he realizado trabajos a distancia para diferentes tipos de clientes y he colaborado para la creación de la imagen de marca de algunos. Soy una persona segura de sí misma, curiosa por naturaleza y siempre estoy trabajando para mejorar mis habilidades trabajando en equipo. Amante de la música, los deportes, autos y videojuegos :D.
+`;
+
 export const EXPERIENCES = [
   {
     year: "Septiembre 2023 – Actual",

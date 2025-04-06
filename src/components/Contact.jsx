@@ -1,6 +1,6 @@
 
 import { motion } from "framer-motion";
-import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+// import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 
 
 
@@ -16,13 +16,15 @@ export const Contact = () => {
       >
         <div className="flex flex-col space-y-2 mb-5">
           <div className="flex items-center space-x-4">
+            <span className="text-sm">© {new Date().getFullYear()} Sergio Cuadros</span>
+            <span className="text-sm">All rights reserved</span>
             <span className="text-sm">Built with <span className="text-white">Vite</span> </span>
             <span className="text-sm">Styled with <span className="text-white">TailwindCSS</span></span>
             <span className="text-sm">Deployed on <span className="text-white">Netlify</span></span>
           </div>
         </div>
         
-        <nav className="flex gap-6 mt-4 md:mt-0">
+        {/* <nav className="flex gap-6 mt-4 md:mt-0">
           <a
             href="https://www.linkedin.com/in/sergio-cuadros-benitez-5199581bb/"
             target="_blank"
@@ -41,7 +43,7 @@ export const Contact = () => {
           >
             <FaGithub size={18} />
           </a>
-        </nav>
+        </nav> */}
         <div className="mt-10">
           <p className="text-sm mb-5">Un poco de lo que me gusta :)</p>
           <iframe

@@ -9,7 +9,7 @@ import {
   RiReactjsFill,
   RiTailwindCssFill,
 } from "react-icons/ri";
-import { SiAdobexd, SiDaisyui, SiShadcnui } from "react-icons/si";
+import { SiAdobexd, SiDaisyui, SiMui } from "react-icons/si";
 import { motion } from "framer-motion";
 import { BiLogoTypescript } from "react-icons/bi";
 
@@ -33,7 +33,7 @@ const icons = [
   { key: "react", icon: <RiReactjsFill /> },
   { key: "tailwind", icon: <RiTailwindCssFill /> },
   { key: "daisyui", icon: <SiDaisyui /> },
-  { key: "shadcnui", icon: <SiShadcnui className="text-3xl md:text-5xl lg:text-5xl" /> },
+  { key: "materialui", icon: <SiMui className="text-3xl md:text-5xl lg:text-5xl" /> },
   { key: "bootstrap", icon: <RiBootstrapFill /> },
   { key: "figma", icon: <FiFigma /> },
   { key: "xd", icon: <SiAdobexd /> },
