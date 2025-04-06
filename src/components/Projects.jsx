@@ -1,5 +1,7 @@
+import {  BiArrowFromLeft } from "react-icons/bi";
 import { PROJECTS } from "../constants";
 import { motion } from "framer-motion";
+import { BsGithub } from "react-icons/bs";
 
 export const Projects = () => {
   return (
@@ -45,6 +47,31 @@ export const Projects = () => {
                   {tech}
                 </span>
               ))}
+
+              <div className="mt-7 flex flex-wrap gap-3">
+                {project.link && (
+                  <a
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 rounded bg-gradient-to-r from-stone-800 to-stone-700 px-4 py-2 text-sm text-stone-200 shadow hover:from-stone-700 hover:to-stone-600 transition active:translate-x-0.5 active:translate-y-0.5 hover:shadow-[0.5rem_0.5rem_#4B4B4B,-0.5rem_-0.5rem_#3E2723] transition rounded-s-3xl"
+                  >
+                    Ver Proyecto
+                    <BiArrowFromLeft className="text-lg" />
+                  </a>
+                )}
+                {project.github && (
+                  <a
+                    href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 rounded border border-stone-600 px-4 py-2 text-sm text-stone-300 shadow hover:bg-stone-800 hover:text-white transition active:translate-x-0.5 active:translate-y-0.5 hover:shadow-[0.5rem_0.5rem_#4B4B4B,-0.5rem_-0.5rem_#3E2723] transition rounded-s-3xl"
+                  >
+                    Ver en GitHub
+                    <BsGithub className="text-lg" /> 
+                  </a>
+                )}
+              </div>
             </motion.div>
           </div>
         ))}

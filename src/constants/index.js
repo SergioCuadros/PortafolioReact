@@ -1,7 +1,9 @@
-import project1 from "../assets/projects/project-1.webp";
-import project2 from "../assets/projects/project-2.webp";
-import project3 from "../assets/projects/project-3.webp";
-import project4 from "../assets/projects/project-4.webp";
+import project1 from "../assets/projects/terceros.png";
+import project2 from "../assets/projects/sorteos.png";
+import project3 from "../assets/projects/tradicion.png";
+import project4 from "../assets/projects/ubi.png";
+import project5 from "../assets/projects/ToDO.png";
+
 
 export const HERO_CONTENT = `Mi enfoque se centra en crear experiencias de usuario excepcionales y garantizar la usabilidad y accesibilidad de mis proyectos. Me apasiona seguir aprendiendo y manteniéndome actualizado sobre las últimas tecnologías y tendencias en el desarrollo web para ofrecer soluciones innovadoras y de calidad.`;
 
@@ -61,34 +63,49 @@ export const EXPERIENCES = [
 
 export const PROJECTS = [
   {
-    title: "E-Commerce Website",
+    title: "Sistema de Terceros para la Venta de Bolita y Lotería Mexicana",
     image: project1,
     description:
-      "A fully functional e-commerce website with features like product listing, shopping cart, and user authentication.",
-    technologies: ["HTML", "CSS", "React", "Node.js", "MongoDB"],
+      "Desarrollé la interfaz de usuario para un sistema de terceros destinado a la venta de boletos de la bolita y lotería mexicana. El frontend incluye funcionalidades para que los usuarios puedan consultar los boletos mediante tablas y filtros, ver resultados anteriores y consultar premios. Implementé una experiencia de usuario intuitiva y atractiva.",
+    technologies: ["HTML", "CSS", "JavaScript", "Bootstrap"],
+    link: "",
   },
   {
-    title: "Task Management App",
+    title: "Sistema de Alta de Sorteos para la Generación de Números Ganadores",
     image: project2,
     description:
-      "An application for managing tasks and projects, with features such as task creation, assignment, and progress tracking.",
-    technologies: ["HTML", "CSS", "Angular", "Firebase"],
+      "Fui responsable del desarrollo frontend de un sistema para la creación de sorteos y la generación de números ganadores. El sistema permite a los administradores crear sorteos de manera sencilla, seleccionar criterios y ver los resultados en tiempo real garantizando una interfaz dinámica y de fácil navegación.",
+    technologies: ["HTML", "CSS", "JavaScript", "Bootstrap"],
+    link: "",
   },
   {
-    title: "Portfolio Website",
+    title: "Landing Page para Dinámicas de Concurso",
     image: project3,
     description:
-      "A personal portfolio website showcasing projects, skills, and contact information.",
-    technologies: ["HTML", "CSS", "React", "Bootstrap"],
+      "Desarrollé el frontend de una landing page interactiva para dinámicas de concurso. Los usuarios podían registrar sus boletos de participación y unirse al sorteo de premios. La página incluye formularios de alta, validación de datos y seguimiento de participación garantizando una experiencia fluida y atractiva para los usuarios.",
+    technologies: ["HTML", "CSS", "JavaScript", "TailwindCSS"],
+    link: "https://latradiciondeganar.juegalabolita.com",
   },
   {
-    title: "Blogging Platform",
+    title: "Consulta de Sucursal Más Cercana para Compra de Bolita",
     image: project4,
     description:
-      "A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.",
-    technologies: ["HTML", "CSS", "Vue.js", "Express", "mySQL"],
+      "Desarrollé el frontend para una funcionalidad de consulta de la sucursal más cercana para la compra de boletos de bolita. Utilizando la geolocalización del dispositivo y consumiendo una API interna de ubicaciones, los usuarios pueden localizar la tienda más cercana en tiempo real así como ver los detalles de cada sucursal, como dirección, horarios y un link que los envia a Google Maps para su ubicación.",
+    technologies: ["HTML", "CSS", "JavaScript", "TailwindCSS"],
+    github: "https://github.com/SergioCuadros/ubicaciones-terceros",
+    link: "https://ubicaciones.juegalabolita.com",
+  },
+  {
+    title: "ToDo List",
+    image: project5,	
+    description:
+      "Aplicación web para gestionar tareas con funcionalidades como agregar, editar, eliminar y filtrar tareas por estado. Implementa tema claro/oscuro, notificaciones con snackbars y animaciones con Framer Motion. Desarrollada con enfoque en UI/UX limpio y minimalista usando React, Redux Toolkit y Material UI.",
+    technologies: ["ReactJS", "Redux Toolkit", "Material UI", "Framer Motion", "JavaScript"],
+    github: "https://github.com/SergioCuadros/To-Do-List",
+    link: "https://to-do-list-sc.netlify.app",
   },
 ];
+
 
 export const CONTACT = {
   address: "767 Fifth Avenue, New York, NY 10153 ",

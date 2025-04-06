@@ -1,6 +1,6 @@
 import heroPic from "../assets/hero.jpg";
-import { ABOUT_TEXT, HERO_CONTENT } from "../constants";
-import { delay, motion } from "framer-motion";
+import { HERO_CONTENT } from "../constants";
+import { motion } from "framer-motion";
 
 const containerVariants = {
   hidden: { opacity: 0, x: -100 },

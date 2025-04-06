@@ -1,17 +1,14 @@
-import { animate } from "framer-motion";
 import { DiIllustrator } from "react-icons/di";
 import { FiFigma } from "react-icons/fi";
 import {
   RiBootstrapFill,
   RiCss3Fill,
-  RiCss3Line,
   RiHtml5Fill,
   RiJavascriptFill,
-  RiNeteaseCloudMusicFill,
   RiReactjsFill,
   RiTailwindCssFill,
 } from "react-icons/ri";
-import { SiAdobexd } from "react-icons/si";
+import { SiAdobexd, SiDaisyui, SiShadcnui } from "react-icons/si";
 import { motion } from "framer-motion";
 
 const iconVariants = (duration) => ({
@@ -83,6 +80,22 @@ const Tecnos = () => {
           className="p-4"
         >
           <RiTailwindCssFill className="text-7xl text-white-400" />
+        </motion.div>
+        <motion.div
+          initial="initial"
+          animate="animate"
+          variants={iconVariants(4.5)}
+          className="p-4"
+        >
+          <SiDaisyui className="text-7xl text-white-400" />
+        </motion.div>
+        <motion.div
+          initial="initial"
+          animate="animate"
+          variants={iconVariants(4.5)}
+          className="p-4"
+        >
+          <SiShadcnui className="text-5xl text-white-400" />
         </motion.div>
         <motion.div
           initial="initial"
