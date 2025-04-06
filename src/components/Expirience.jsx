@@ -24,7 +24,7 @@ const Expirience = () => {
                 whileInView={{ opacity: 1, x: 0 }}
                 initial={{ opacity: 0, x: -100 }}
                 transition={{ duration: 1 }}
-                className="text-lg font-semibold text-stone-900 dark:text-white"
+                className="text-lg font-semibold text-stone-900 dark:text-white mt-5"
               >
                 {experience.role} -{" "}
                 <span className="text-sm text-stone-500 dark:text-stone-400">
@@ -35,20 +35,21 @@ const Expirience = () => {
                 whileInView={{ opacity: 1, x: 0 }}
                 initial={{ opacity: 0, x: 100 }}
                 transition={{ duration: 1 }}
-                className="text-base font-normal text-stone-500 dark:text-stone-400"
+                className="text-base font-normal text-stone-500 dark:text-stone-400 mt-5 border-solid border-2 border-stone-900 dark:border-stone-700 rounded-lg p-4"
               >
                 {experience.description}
               </motion.p>
-              <div className="mt-5">
+              <div className="mt-5 flex flex-wrap gap-3">
                 {experience.technologies.map((tech, index) => (
                   <span
                     key={index}
-                    className="mr-3 mt-5 rounded bg-stone-900 px-2 py-1 text-sm font-medium text-slate-300"
+                    className="mb-3 rounded bg-stone-900 px-2 py-1 text-sm font-medium text-slate-300"
                   >
                     {tech}
                   </span>
                 ))}
               </div>
+
             </li>
           ))}
         </ol>

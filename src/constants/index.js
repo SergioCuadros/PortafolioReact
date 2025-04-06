@@ -3,6 +3,7 @@ import project2 from "../assets/projects/sorteos.png";
 import project3 from "../assets/projects/tradicion.png";
 import project4 from "../assets/projects/ubi.png";
 import project5 from "../assets/projects/ToDO.png";
+import Logo from "../assets/logo.svg";
 
 
 export const HERO_CONTENT = `Mi enfoque se centra en crear experiencias de usuario excepcionales y garantizar la usabilidad y accesibilidad de mis proyectos. Me apasiona seguir aprendiendo y manteniéndome actualizado sobre las últimas tecnologías y tendencias en el desarrollo web para ofrecer soluciones innovadoras y de calidad.`;
@@ -109,8 +110,21 @@ export const PROJECTS = [
 ];
 
 
+export const skills = [
+  'JavaScript',
+  'React',
+  'HTML5',
+  'CSS3',
+  'Node.js',
+  'Python',
+  'Git',
+  'Docker',
+];
+
 export const CONTACT = {
   address: "767 Fifth Avenue, New York, NY 10153 ",
   phoneNo: "+12 4555 666 00 ",
-  email: "me@example.com",
+  email: "sergiocuadros44@gmail.com",
+  link: "https://www.linkedin.com/in/sergio-cuadros-benitez-5199581bb/",
+  logo: Logo,
 };

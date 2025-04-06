@@ -43,7 +43,7 @@ export const Projects = () => {
               {project.technologies.map((tech, index) => (
                 <span
                   key={index}
-                  className="bg-stone-800 text-stone-300 px-3 py-1 text-xs rounded-full"
+                  className="bg-stone-800 text-stone-300 px-3 py-1 text-xs rounded"
                 >
                   {tech}
                 </span>
@@ -56,7 +56,7 @@ export const Projects = () => {
                   href={project.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 rounded bg-gradient-to-r from-stone-800 to-stone-700 px-4 py-2 text-sm text-stone-200 shadow hover:from-stone-700 hover:to-stone-600 active:translate-x-0.5 active:translate-y-0.5 hover:shadow-[0.5rem_0.5rem_#4B4B4B,-0.5rem_-0.5rem_#3E2723] transition"
+                  className="inline-flex items-center gap-2 rounded bg-gradient-to-r from-stone-800 to-stone-700 px-4 py-2 text-sm text-stone-200 shadow hover:from-stone-700 hover:to-stone-600 active:translate-x-0.5 active:translate-y-0.5 hover:shadow-[0.5rem_0.5rem_#4B4B4B,-0.5rem_-0.5rem_#1d0d00] transition"
                 >
                   Ver Proyecto <BiArrowFromLeft className="text-lg" />
                 </a>
@@ -67,7 +67,7 @@ export const Projects = () => {
                   href={project.github}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 rounded border border-stone-600 px-4 py-2 text-sm text-stone-300 shadow hover:bg-stone-800 hover:text-white active:translate-x-0.5 active:translate-y-0.5 hover:shadow-[0.5rem_0.5rem_#4B4B4B,-0.5rem_-0.5rem_#3E2723] transition"
+                  className="inline-flex items-center gap-2 rounded border border-stone-600 px-4 py-2 text-sm text-stone-300 shadow hover:bg-stone-800 hover:text-white active:translate-x-0.5 active:translate-y-0.5 hover:shadow-[0.5rem_0.5rem_#4B4B4B,-0.5rem_-0.5rem_#1d0d00] transition"
                 >
                   Ver en GitHub <BsGithub className="text-lg" />
                 </a>

@@ -46,7 +46,7 @@ export const Hero = () => {
           >
             <motion.h2
               variants={childVariants}
-              className="pb-2 text-4xl tracking-tighter lg:text-8xl"
+              className="pb-2 text-4xl tracking-tighter lg:text-8xl mb-5"
             >
               Sergio Cuadros
             </motion.h2>
@@ -68,7 +68,7 @@ export const Hero = () => {
               href="/CV_Sergio_Cuadros.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="cursor-pointer uppercase bg-neutral-800 px-4 py-2 active:translate-x-0.5 active:translate-y-0.5 hover:shadow-[0.5rem_0.5rem_#4B4B4B,-0.5rem_-0.5rem_#3E2723] transition rounded-s-3xl"
+              className="cursor-pointer uppercase bg-neutral-800 px-4 py-2 active:translate-x-0.5 active:translate-y-0.5 hover:shadow-[0.5rem_0.5rem_#4B4B4B,-0.5rem_-0.5rem_#1d0d00] transition rounded-s-3xl"
             >
               Descargar CV
             </motion.a>
