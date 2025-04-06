@@ -21,7 +21,7 @@ git clone https://github.com/SergioCuadros/PortafolioReact.git
 npm install
 ```
 
-### 3.Ejecutar el proyecto
+### 3. Ejecutar el proyecto
 
 ```bash
 npm run dev
@@ -49,4 +49,4 @@ npm run dev
 3. **Comandos útiles**: Incluye los comandos comunes que usarías durante el desarrollo y la construcción del proyecto.
 
 
-Este es un **README.md** sencillo pero efectivo para un portafolio de Frontend Junior que usa estas tecnologías. Puedes personalizarlo más según lo que necesites.
+
