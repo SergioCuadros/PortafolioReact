@@ -13,44 +13,45 @@ const Expirience = () => {
         Experiencia
       </motion.h2>
       <div>
-        {EXPERIENCES.map((experience, index) => (
-          <motiodiv
-            key={index}
-            className="mb-8 flex flex-wrap lg:justify-center"
-          >
-            <motion.div
-              whileInView={{ opacity: 1, x: 0 }}
-              initial={{ opacity: 0, x: -100 }}
-              transition={{ duration: 1 }}
-              className="w-full lg:w-1/4"
-            >
-              <p className="mb-2 text-sm text-stone-400">{experience.year}</p>
-            </motion.div>
-
-            <motion.div
-              whileInView={{ opacity: 1, x: 0 }}
-              initial={{ opacity: 0, x: 100 }}
-              transition={{ duration: 1 }}
-              className="w-full max-w-xl lg:w-3/4"
-            >
-              <h3 className="mb-2 font-serif">
+        <ol className="relative border-l border-stone-900 dark:border-stone-700">
+          {EXPERIENCES.map((experience, index) => (
+            <li key={index} className="mb-10 ml-6">
+              <div className="absolute w-3 h-3 bg-stone-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-stone-900 dark:bg-stone-700"></div>
+              <time className="mb-1 text-md font-normal leading-none text-stone-400 dark:text-stone-500">
+                {experience.year}
+              </time>
+              <motion.h3
+                whileInView={{ opacity: 1, x: 0 }}
+                initial={{ opacity: 0, x: -100 }}
+                transition={{ duration: 1 }}
+                className="text-lg font-semibold text-stone-900 dark:text-white"
+              >
                 {experience.role} -{" "}
-                <span className="text-sm text-stone-500">
+                <span className="text-sm text-stone-500 dark:text-stone-400">
                   {experience.company}
                 </span>
-              </h3>
-              <p className="mb-4 text-stone-400">{experience.description}</p>
-              {experience.technologies.map((tech, index) => (
-                <span
-                  className="mr-3 mt-6 rounded bg-stone-900 px-2 py-1 text-sm font-medium text-slate-300"
-                  key={index}
-                >
-                  {tech}
-                </span>
-              ))}
-            </motion.div>
-          </motiodiv>
-        ))}
+              </motion.h3>
+              <motion.p
+                whileInView={{ opacity: 1, x: 0 }}
+                initial={{ opacity: 0, x: 100 }}
+                transition={{ duration: 1 }}
+                className="text-base font-normal text-stone-500 dark:text-stone-400"
+              >
+                {experience.description}
+              </motion.p>
+              <div className="mt-5">
+                {experience.technologies.map((tech, index) => (
+                  <span
+                    key={index}
+                    className="mr-3 mt-5 rounded bg-stone-900 px-2 py-1 text-sm font-medium text-slate-300"
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
+            </li>
+          ))}
+        </ol>
       </div>
     </div>
   );
