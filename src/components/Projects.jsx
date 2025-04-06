@@ -1,11 +1,11 @@
-import {  BiArrowFromLeft } from "react-icons/bi";
+import { BiArrowFromLeft } from "react-icons/bi";
 import { PROJECTS } from "../constants";
 import { motion } from "framer-motion";
 import { BsGithub } from "react-icons/bs";
 
 export const Projects = () => {
   return (
-    <div className="pb-4">
+    <div className="pb-20">
       <motion.h2
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: -100 }}
@@ -14,66 +14,66 @@ export const Projects = () => {
       >
         Proyectos
       </motion.h2>
-      <div>
+
+      {/* Grid responsive con gap */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-4">
         {PROJECTS.map((project, index) => (
-          <div key={index} className="mb-8 flex flex-wrap lg:justify-center">
-            <motion.div
-              whileInView={{ opacity: 1, x: 0 }}
-              initial={{ opacity: 0, x: -100 }}
-              transition={{ duration: 1 }}
-              className="w-full lg:w-1/4"
-            >
-              <img
-                src={project.image}
-                width={250}
-                height={250}
-                alt={project.title}
-                className="mb-6 rounded"
-              />
-            </motion.div>
-            <motion.div
-              whileInView={{ opacity: 1, x: 0 }}
-              initial={{ opacity: 0, x: 100 }}
-              transition={{ duration: 1 }}
-              className="w-full max-w-xl lg:w-3/4"
-            >
-              <h3 className="mb-2 font-semibold text-2xl">{project.title}</h3>
-              <p className="mb-4 text-stone-400">{project.description}</p>
+          <motion.div
+            key={index}
+            whileInView={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0, y: 50 }}
+            transition={{ duration: 0.6, delay: index * 0.1 }}
+            className=" rounded-lg shadow-lg p-5 flex flex-col"
+          >
+            <img
+              src={project.image}
+              alt={project.title}
+              className="rounded mb-4 w-full h-48 object-cover object-center shadow-md"
+            />
+
+            <h3 className="mb-2 text-xl font-semibold text-white">
+              {project.title}
+            </h3>
+
+            <p className="mb-4 text-sm text-stone-400">
+              {project.description}
+            </p>
+
+            <div className="mb-4 flex flex-wrap gap-2">
               {project.technologies.map((tech, index) => (
                 <span
-                  className="mr-2 rounded bg-stone-900 p-2 text-sm font-medium text-stone-300"
                   key={index}
+                  className="bg-stone-800 text-stone-300 px-3 py-1 text-xs rounded-full"
                 >
                   {tech}
                 </span>
               ))}
+            </div>
 
-              <div className="mt-7 flex flex-wrap gap-3">
-                {project.link && (
-                  <a
-                    href={project.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 rounded bg-gradient-to-r from-stone-800 to-stone-700 px-4 py-2 text-sm text-stone-200 shadow hover:from-stone-700 hover:to-stone-600 transition active:translate-x-0.5 active:translate-y-0.5 hover:shadow-[0.5rem_0.5rem_#4B4B4B,-0.5rem_-0.5rem_#3E2723] transition rounded-s-3xl"
-                  >
-                    Ver Proyecto
-                    <BiArrowFromLeft className="text-lg" />
-                  </a>
-                )}
-                {project.github && (
-                  <a
-                    href={project.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 rounded border border-stone-600 px-4 py-2 text-sm text-stone-300 shadow hover:bg-stone-800 hover:text-white transition active:translate-x-0.5 active:translate-y-0.5 hover:shadow-[0.5rem_0.5rem_#4B4B4B,-0.5rem_-0.5rem_#3E2723] transition rounded-s-3xl"
-                  >
-                    Ver en GitHub
-                    <BsGithub className="text-lg" /> 
-                  </a>
-                )}
-              </div>
-            </motion.div>
-          </div>
+            <div className="mt-auto flex flex-wrap gap-3">
+              {project.link && (
+                <a
+                  href={project.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 rounded bg-gradient-to-r from-stone-800 to-stone-700 px-4 py-2 text-sm text-stone-200 shadow hover:from-stone-700 hover:to-stone-600 active:translate-x-0.5 active:translate-y-0.5 hover:shadow-[0.5rem_0.5rem_#4B4B4B,-0.5rem_-0.5rem_#3E2723] transition"
+                >
+                  Ver Proyecto <BiArrowFromLeft className="text-lg" />
+                </a>
+              )}
+
+              {project.github && (
+                <a
+                  href={project.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 rounded border border-stone-600 px-4 py-2 text-sm text-stone-300 shadow hover:bg-stone-800 hover:text-white active:translate-x-0.5 active:translate-y-0.5 hover:shadow-[0.5rem_0.5rem_#4B4B4B,-0.5rem_-0.5rem_#3E2723] transition"
+                >
+                  Ver en GitHub <BsGithub className="text-lg" />
+                </a>
+              )}
+            </div>
+          </motion.div>
         ))}
       </div>
     </div>

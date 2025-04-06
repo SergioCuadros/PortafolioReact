@@ -63,20 +63,22 @@ export const EXPERIENCES = [
 
 export const PROJECTS = [
   {
-    title: "Sistema de Terceros para la Venta de Bolita y Lotería Mexicana",
-    image: project1,
+    title: "ToDo List",
+    image: project5,	
     description:
-      "Desarrollé la interfaz de usuario para un sistema de terceros destinado a la venta de boletos de la bolita y lotería mexicana. El frontend incluye funcionalidades para que los usuarios puedan consultar los boletos mediante tablas y filtros, ver resultados anteriores y consultar premios. Implementé una experiencia de usuario intuitiva y atractiva.",
-    technologies: ["HTML", "CSS", "JavaScript", "Bootstrap"],
-    link: "",
+      "Aplicación web para gestionar tareas con funcionalidades como agregar, editar, eliminar y filtrar tareas por estado. Implementa tema claro/oscuro, notificaciones con snackbars y animaciones con Framer Motion. Desarrollada con enfoque en UI/UX limpio y minimalista usando React, Redux Toolkit y Material UI.",
+    technologies: ["ReactJS", "Redux Toolkit", "Material UI", "Framer Motion", "JavaScript"],
+    github: "https://github.com/SergioCuadros/To-Do-List",
+    link: "https://to-do-list-sc.netlify.app",
   },
   {
-    title: "Sistema de Alta de Sorteos para la Generación de Números Ganadores",
-    image: project2,
+    title: "Consulta de Sucursal Más Cercana para Compra de Bolita",
+    image: project4,
     description:
-      "Fui responsable del desarrollo frontend de un sistema para la creación de sorteos y la generación de números ganadores. El sistema permite a los administradores crear sorteos de manera sencilla, seleccionar criterios y ver los resultados en tiempo real garantizando una interfaz dinámica y de fácil navegación.",
-    technologies: ["HTML", "CSS", "JavaScript", "Bootstrap"],
-    link: "",
+      "Desarrollé el frontend para una funcionalidad de consulta de la sucursal más cercana para la compra de boletos de bolita. Utilizando la geolocalización del dispositivo y consumiendo una API interna de ubicaciones, los usuarios pueden localizar la tienda más cercana en tiempo real así como ver los detalles de cada sucursal, como dirección, horarios y un link que los envia a Google Maps para su ubicación.",
+    technologies: ["HTML", "CSS", "JavaScript", "TailwindCSS", "Axios"],
+    github: "https://github.com/SergioCuadros/ubicaciones-terceros",
+    link: "https://ubicaciones.juegalabolita.com",
   },
   {
     title: "Landing Page para Dinámicas de Concurso",
@@ -86,24 +88,24 @@ export const PROJECTS = [
     technologies: ["HTML", "CSS", "JavaScript", "TailwindCSS"],
     link: "https://latradiciondeganar.juegalabolita.com",
   },
+  
   {
-    title: "Consulta de Sucursal Más Cercana para Compra de Bolita",
-    image: project4,
+    title: "Sistema de Terceros para la Venta de Bolita y Lotería Mexicana",
+    image: project1,
     description:
-      "Desarrollé el frontend para una funcionalidad de consulta de la sucursal más cercana para la compra de boletos de bolita. Utilizando la geolocalización del dispositivo y consumiendo una API interna de ubicaciones, los usuarios pueden localizar la tienda más cercana en tiempo real así como ver los detalles de cada sucursal, como dirección, horarios y un link que los envia a Google Maps para su ubicación.",
-    technologies: ["HTML", "CSS", "JavaScript", "TailwindCSS"],
-    github: "https://github.com/SergioCuadros/ubicaciones-terceros",
-    link: "https://ubicaciones.juegalabolita.com",
+      "Desarrollé la interfaz de usuario para un sistema de terceros destinado a la venta de boletos de la bolita y lotería mexicana. El frontend incluye funcionalidades para que los usuarios puedan consultar los boletos mediante tablas y filtros, ver resultados anteriores y consultar premios. Implementé una experiencia de usuario intuitiva y atractiva.",
+    technologies: ["HTML", "CSS", "JavaScript", "Bootstrap", ".NET"],
+    link: "",
   },
   {
-    title: "ToDo List",
-    image: project5,	
+    title: "Sistema de Alta de Sorteos para la Generación de Números Ganadores",
+    image: project2,
     description:
-      "Aplicación web para gestionar tareas con funcionalidades como agregar, editar, eliminar y filtrar tareas por estado. Implementa tema claro/oscuro, notificaciones con snackbars y animaciones con Framer Motion. Desarrollada con enfoque en UI/UX limpio y minimalista usando React, Redux Toolkit y Material UI.",
-    technologies: ["ReactJS", "Redux Toolkit", "Material UI", "Framer Motion", "JavaScript"],
-    github: "https://github.com/SergioCuadros/To-Do-List",
-    link: "https://to-do-list-sc.netlify.app",
+      "Fui responsable del desarrollo frontend de un sistema para la creación de sorteos y la generación de números ganadores. El sistema permite a los administradores crear sorteos de manera sencilla, seleccionar criterios y ver los resultados en tiempo real garantizando una interfaz dinámica y de fácil navegación.",
+    technologies: ["HTML", "CSS", "JavaScript", "Bootstrap", ".NET"],
+    link: "",
   },
+
 ];
 
 

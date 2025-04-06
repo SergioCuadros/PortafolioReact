@@ -1,4 +1,5 @@
 import { DiIllustrator } from "react-icons/di";
+import { cloneElement } from "react";
 import { FiFigma } from "react-icons/fi";
 import {
   RiBootstrapFill,
@@ -10,6 +11,7 @@ import {
 } from "react-icons/ri";
 import { SiAdobexd, SiDaisyui, SiShadcnui } from "react-icons/si";
 import { motion } from "framer-motion";
+import { BiLogoTypescript } from "react-icons/bi";
 
 const iconVariants = (duration) => ({
   initial: { y: -10 },
@@ -18,11 +20,26 @@ const iconVariants = (duration) => ({
     transition: {
       duration: duration,
       ease: "linear",
-      reapet: Infinity,
+      repeat: Infinity,
       repeatType: "reverse",
     },
   },
 });
+const icons = [
+  { key: "html", icon: <RiHtml5Fill /> },
+  { key: "css", icon: <RiCss3Fill /> },
+  { key: "js", icon: <RiJavascriptFill /> },
+  { key: "ts", icon: <BiLogoTypescript className="text-3xl md:text-5xl lg:text-5xl" /> },
+  { key: "react", icon: <RiReactjsFill /> },
+  { key: "tailwind", icon: <RiTailwindCssFill /> },
+  { key: "daisyui", icon: <SiDaisyui /> },
+  { key: "shadcnui", icon: <SiShadcnui className="text-3xl md:text-5xl lg:text-5xl" /> },
+  { key: "bootstrap", icon: <RiBootstrapFill /> },
+  { key: "figma", icon: <FiFigma /> },
+  { key: "xd", icon: <SiAdobexd /> },
+  { key: "illustrator", icon: <DiIllustrator /> },
+];
+
 
 const Tecnos = () => {
   return (
@@ -31,104 +48,34 @@ const Tecnos = () => {
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: -100 }}
         transition={{ duration: 1.5 }}
-        className="my-20 text-center text-4xl"
+        className="my-20 text-center text-3xl md:text-4xl"
       >
         Tecnologías
       </motion.h2>
+
       <motion.div
         whileInView={{ opacity: 1, x: 0 }}
         initial={{ opacity: 0, x: -100 }}
         transition={{ duration: 1.5 }}
-        className="flex flex-wrap items-center justify-center gap-4"
+        className="grid grid-cols-3 gap-4 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 justify-items-center items-center px-4"
       >
-        <motion.div
-          initial="initial"
-          animate="animate"
-          variants={iconVariants(2.5)}
-        >
-          <RiHtml5Fill className="text-7xl text-white-400" />
-        </motion.div>
+        {icons.map((item, i) => (
+          <motion.div
+            key={item.key}
+            initial="initial"
+            animate="animate"
+            variants={iconVariants(2.5 + i * 0.3)}
+            className="p-2"
+          >
+            {cloneElement(item.icon, {
+              className:
+                item.key !== "shadcnui"
+                  ? "text-4xl md:text-6xl lg:text-7xl text-white/80"
+                  : item.icon.props.className,
+            })}
+          </motion.div>
+        ))}
 
-        <motion.div
-          initial="initial"
-          animate="animate"
-          variants={iconVariants(3)}
-          className="p-4"
-        >
-          <RiCss3Fill className="text-7xl text-white-400" />
-        </motion.div>
-        <motion.div
-          initial="initial"
-          animate="animate"
-          variants={iconVariants(5)}
-          className="p-4"
-        >
-          <RiJavascriptFill className="text-7xl text-white-400" />
-        </motion.div>
-        <motion.div
-          initial="initial"
-          animate="animate"
-          variants={iconVariants(4)}
-          className="p-4"
-        >
-          <RiReactjsFill className="text-7xl text-white-400" />
-        </motion.div>
-        <motion.div
-          initial="initial"
-          animate="animate"
-          variants={iconVariants(4.5)}
-          className="p-4"
-        >
-          <RiTailwindCssFill className="text-7xl text-white-400" />
-        </motion.div>
-        <motion.div
-          initial="initial"
-          animate="animate"
-          variants={iconVariants(4.5)}
-          className="p-4"
-        >
-          <SiDaisyui className="text-7xl text-white-400" />
-        </motion.div>
-        <motion.div
-          initial="initial"
-          animate="animate"
-          variants={iconVariants(4.5)}
-          className="p-4"
-        >
-          <SiShadcnui className="text-5xl text-white-400" />
-        </motion.div>
-        <motion.div
-          initial="initial"
-          animate="animate"
-          variants={iconVariants(5)}
-          className="p-4"
-        >
-          <RiBootstrapFill className="text-7xl text-white-400" />
-        </motion.div>
-        <motion.div
-          initial="initial"
-          animate="animate"
-          variants={iconVariants(5.5)}
-          className="p-4"
-        >
-          <FiFigma className="text-7xl text-white-400" />
-        </motion.div>
-        <motion.div
-          initial="initial"
-          animate="animate"
-          variants={iconVariants(6)}
-          className="p-4"
-        >
-          <SiAdobexd className="text-7xl text-white-400" />
-        </motion.div>
-        <motion.div
-          initial="initial"
-          animate="animate"
-          variants={iconVariants(6.5)}
-          className="p-4"
-        >
-          <DiIllustrator className="text-7xl text-white-400" />
-        </motion.div>
       </motion.div>
     </div>
   );
