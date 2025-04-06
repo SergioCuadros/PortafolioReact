@@ -4,9 +4,13 @@ import Tecnos from "./components/Tecnos"
 import { Projects } from "./components/Projects"
 import Expirience from "./components/Expirience"
 import { Contact } from "./components/Contact"
+import CustomCursor from "./components/CursorCustom"
+
 // import { Skills } from "./components/Skills"
 const App = () => {
+  
   return (
+    
     <div className="overflow-x-hidden text-stone-300 antialiased">
       <div className="fixed inset-0 -z-10">
         <div className="relative h-full w-full bg-black">
@@ -16,11 +20,9 @@ const App = () => {
           </div>
           <div className="absolute left-100 right-0 top-[55%] h-[700px] w-[700px] bg-[radial-gradient(circle_400px_at_50%_300px,#1d0d00,#000)] hidden lg:block">
           </div>
-
-
         </div>
       </div>
-
+      <CustomCursor />
       <div className="container mx-auto px-8">
         <Navbar />
         <Hero />

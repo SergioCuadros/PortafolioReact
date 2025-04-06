@@ -13,3 +13,55 @@
   /* font-family: 'Source Code Pro', monospace; */
   /* background-color: #000000; */
 }
+body {
+  cursor: none; /* Oculta el cursor nativo */
+  --sb-track-color: #333333;
+  --sb-thumb-color: #1f1100;
+  --sb-size: 10px;
+}
+::selection {
+  background-color: #5c4033; /* Café oscuro */
+  color: #000000; /* Color del texto seleccionado */
+}
+
+.custom-cursor {
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  background-color: #1f1100;
+  border: 2px solid #1f1100;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  transition: transform 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
+  mix-blend-mode: difference; /* se ve bonito con fondo claro */
+}
+
+.custom-cursor.hovered {
+  transform: translate(-50%, -50%) scale(2);
+  background-color: rgba(51, 51, 51, 0.3);
+  border-color: #555555;
+}
+
+
+body::-webkit-scrollbar {
+  width: var(--sb-size);
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--sb-track-color);
+  border-radius: 1px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--sb-thumb-color);
+  border-radius: 1px;
+}
+
+@supports not selector(::-webkit-scrollbar) {
+  body {
+      scrollbar-color: var(--sb-thumb-color)
+                     var(--sb-track-color);
+  }
+}
+

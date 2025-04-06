@@ -2,8 +2,6 @@
 import { motion } from "framer-motion";
 // import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 
-
-
 export const Contact = () => {
 
   return (
