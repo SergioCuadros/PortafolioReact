@@ -3,7 +3,9 @@ import project2 from "../assets/projects/sorteos.png";
 import project3 from "../assets/projects/tradicion.png";
 import project4 from "../assets/projects/ubi.png";
 import project5 from "../assets/projects/ToDO.png";
+import project6 from "../assets/projects/harrypotterweb.png";
 import Logo from "../assets/logo.svg";
+
 
 
 export const HERO_CONTENT = `Mi enfoque se centra en crear experiencias de usuario excepcionales y garantizar la usabilidad y accesibilidad de mis proyectos. Me apasiona seguir aprendiendo y manteniéndome actualizado sobre las últimas tecnologías y tendencias en el desarrollo web para ofrecer soluciones innovadoras y de calidad.`;
@@ -66,6 +68,15 @@ export const EXPERIENCES = [
 ];
 
 export const PROJECTS = [
+  {
+    title: "Harry Potter Data Web App",
+    image: project6,
+    description:
+      "Aplicación web que permite a los usuarios explorar información sobre personajes, casas y hechizos del universo de Harry Potter. Utiliza la API de Harry Potter para obtener datos en tiempo real y presenta una interfaz atractiva y fácil de usar. Desarrollada con React, Tailwind y TypeScript.",
+    technologies: ["ReactJS", "Typescript", "TailwindCSS", "DaisyUI", "React Router"],
+    github: "https://github.com/SergioCuadros/HarryPotter-Api-Web",
+    link: "https://harry-potter-api-web.vercel.app",
+  },
   {
     title: "ToDo List",
     image: project5,	
